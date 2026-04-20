@@ -33,7 +33,7 @@ The solution to the problem, from the developer's perspective.
 
 ## Commits
 
-A LONG, detailed implementation plan. Write the plan in plain English, breaking down the implementation into the tiniest commits possible. Each commit should leave the codebase in a working state.
+A LONG, detailed implementation plan. Write the plan in plain Chinese, breaking down the implementation into the tiniest commits possible. Each commit should leave the codebase in a working state.
 
 ## Decision Document
 
