@@ -178,6 +178,32 @@ This repository will continue to grow with more skills for:
 │  └─ write-a-skill/
 └─ README.md
 ```
+## Skill 速查表
+
+| Skill | 用途 | 注意点 |
+| --- | --- | --- |
+| `tdd` | 红绿重构，用行为测试驱动开发或修 bug | 强调“一个测试、一个实现”，测试公共接口，不测实现细节 |
+| `triage-issue` | 调查 bug 根因，生成带 TDD 修复计划的 GitHub issue | 假设可用 `gh issue create`，会写 GitHub issue |
+| `qa` | 交互式 QA，把用户报告的问题整理成 GitHub issue | 要求 issue 不写文件路径/行号，偏用户行为描述 |
+| `github-triage` | GitHub issue 标签状态机 triage | 会读写 issue、评论、标签；要求所有 AI 评论带 disclaimer |
+| `to-prd` | 把当前上下文合成 PRD 并提交为 GitHub issue | 要求先理解代码库，不做长访谈 |
+| `to-issues` | 把 PRD/计划拆成可独立领取的垂直切片 issue | 强调 AFK/HITL、依赖关系、验收标准 |
+| `request-refactor-plan` | 访谈式生成细粒度重构计划，再提交 GitHub issue | 适合大重构前先规划，不直接改代码 |
+| `improve-codebase-architecture` | 找架构改进点，尤其浅模块合并为深模块 | 依赖 `REFERENCE.md`，会倾向创建 refactor RFC issue |
+| `design-an-interface` | 为模块/API 生成多个差异化接口设计并比较 | 原文要求并行子代理；我会按当前 Codex 权限规则适配 |
+| `grill-me` | 对方案或设计进行高强度追问 | 一次问一个问题，适合需求不清时 |
+| `domain-model` | 用 DDD 术语审问方案，并维护 `CONTEXT.md`/ADR | 会写文档；带 `disable-model-invocation: true` |
+| `ubiquitous-language` | 从对话中提取领域词汇表到 `UBIQUITOUS_LANGUAGE.md` | 会创建或更新本地文档 |
+| `zoom-out` | 要求从更高层解释代码区域和调用关系 | 很短的辅助 skill，也有 `disable-model-invocation: true` |
+| `migrate-to-shoehorn` | 把测试里的 `as` 断言迁移到 `@total-typescript/shoehorn` | 只用于测试代码；安装依赖需要网络和权限 |
+| `setup-pre-commit` | 配置 Husky、lint-staged、Prettier、typecheck/test hook | 会改配置、安装依赖，甚至提交 commit，使用前要明确授权 |
+| `git-guardrails-claude-code` | 给 Claude Code 加阻止危险 git 命令的 hook | Claude Code 专用；脚本依赖 bash 和 `jq` |
+| `scaffold-exercises` | 按课程/练习结构创建 exercise 目录 | 会创建文件夹/readme，并运行 `pnpm ai-hero-cli internal lint` |
+| `write-a-skill` | 创建新的 skill 目录和 `SKILL.md` | 和当前系统里的 `skill-creator` 类似，但更简洁 |
+| `edit-article` | 编辑文章结构和表达 | 会先按标题分段并确认结构 |
+| `obsidian-vault` | 管理 Obsidian vault 笔记 | 原路径是 WSL 风格 `/mnt/d/...`，当前 Windows 环境换成 `D:\...` |
+| `caveman` | 极简压缩沟通模式 | 一旦触发会持续，直到用户说停止或恢复正常 |
+
 
 ### 分类说明
 
